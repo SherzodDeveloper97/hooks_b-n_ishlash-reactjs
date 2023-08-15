@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import {useState, useMemo} from 'react'
+import ChildMessages from "./components/ChildMessages";
 
 // hooks -> re-charging (useState)
 
@@ -21,6 +22,10 @@ const Hooks = () => {
         })
     }
 
+    const childMessages = useMemo(() => {
+        return <ChildMessages />
+    },[])
+
   return (
     <div className='container'>
         <div className="card">
@@ -30,6 +35,10 @@ const Hooks = () => {
                     <span className='alert-messages'>{message}</span>
                 </h1>
             </div>
+            <hr />
+
+            {childMessages}
+
             <hr />
 
             <div className="contact">

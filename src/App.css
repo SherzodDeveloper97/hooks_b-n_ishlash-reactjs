@@ -106,3 +106,11 @@ input:focus{
 .edit-pen{
     margin-right: 5px;
 }
+.child_message--container{
+    text-align: center;
+    background-color: yellow;
+}
+.child-box{
+    /* background-color: #fff; */
+    padding: 80px;
+}
